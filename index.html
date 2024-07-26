@@ -1,13 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BinToDec Converter</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
-    <script src="script.js"></script>
+    <div class="container">
+        <div class="text-wrapper">
+            <h2>BinToDec Converter</h2>
+        </div>
+        <form>
+            <!-- Input that receives the binary number -->
+            <div class="input-wrapper">
+                <input type="number" id="bin" placeholder="Binary number" class="onFocus">
+                <button type="reset" class="reset">
+                    <ion-icon name="reload-outline"></ion-icon>
+                </button>
+            </div>
+            <!-- Outputs the result -->
+            <div class="input-wrapper">
+                <input type="text" id="dec" placeholder="Decimal output" readonly>
+                <button type="button" id="copy-button">
+                    <ion-icon name="clipboard-outline"></ion-icon>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-wrapper">
+            <p>Made by <b>Imacoder</b></p>
+            <a href="https://github.com/ImaCod3r">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+        </div>
+    </footer>
 </body>
 </html>
+
+<!-- Local javascript -->
+<script src="script.js"></script>
+
+<!-- Ionicons import -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
