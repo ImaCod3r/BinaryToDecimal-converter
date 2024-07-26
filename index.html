@@ -19,16 +19,19 @@
             <h2>BinToDec Converter</h2>
         </div>
         <form>
+            <label for="bin">Binary number</label>
             <!-- Input that receives the binary number -->
             <div class="input-wrapper">
-                <input type="number" id="bin" placeholder="Binary number" class="onFocus">
+                <input type="text" id="bin" placeholder="Binary number">
                 <button type="reset" class="reset">
                     <ion-icon name="reload-outline"></ion-icon>
                 </button>
             </div>
+
+            <label for="dec">Decimal</label>
             <!-- Outputs the result -->
             <div class="input-wrapper">
-                <input type="text" id="dec" placeholder="Decimal output" readonly>
+                <input type="number" id="dec" placeholder="Decimal output" readonly>
                 <button type="button" id="copy-button">
                     <ion-icon name="clipboard-outline"></ion-icon>
                 </button>
